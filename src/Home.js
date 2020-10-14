@@ -10,7 +10,7 @@ export default withOktaAuth(class Home extends Component {
   }
 
   async login() {
-    this.props.authService.login('/');
+    this.props.history.push('/login');
   }
 
   async logout() {
